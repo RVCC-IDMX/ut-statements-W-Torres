@@ -12,7 +12,9 @@
  * @returns {boolean} true if str is a string
  */
 function isString(str) {
-  // write your code here & return
+  if (typeof str === 'string') {
+    return true;
+  } return false;
 }
 
 /**
@@ -21,7 +23,9 @@ function isString(str) {
  * @returns {boolean}  - true if str is blank (empty)
  */
 function isBlank(str) {
-  // write your code here & return
+  if (typeof str === 'string' && str.length === 0) {
+    return true;
+  } return false;
 }
 
 /**
@@ -33,10 +37,17 @@ function isBlank(str) {
  * @returns {string} - the name of the person
  */
 function sayHelloOrBye(name, num) {
-  // write your code here & return
+  const phrase1 = 'Hello ';
+  const phrase2 = 'Bye ';
+  if (num === 0) {
+    const string = phrase1 + name;
+    return string;
+  } const string = phrase2 + name;
+  return string;
 }
 
-/**
+/** ye ';
+  return
  * Checks if 2 strings have the same value, case sensitive
  * @param {string} str1 - the first string to compare
  * @param {string} str2 - the second string to compare
@@ -45,6 +56,9 @@ function sayHelloOrBye(name, num) {
  */
 function compareStrings(str1, str2) {
   // write your code here & return
+  if (str1 === str2) {
+    return true;
+  } return false;
 }
 
 module.exports = {

@@ -13,8 +13,10 @@
  * @param {number} b - Second number to calculate
  * @returns {number} - The sum of the two numbers
  */
-function sum(a, b) {
+function sum(a = 20, b = 15) {
   // write your code here & return value
+  const totalsum = a + b;
+  return totalsum;
 }
 
 /**
@@ -23,8 +25,9 @@ function sum(a, b) {
  * @param {number|string} y - Second number to calculate
  * @returns {number} - The sum of the two numbers
  */
-function betterSum(x, y) {
-  // write your code here & return value
+function betterSum(x = '50', y = '45') {
+  const Totalsum = +x + +y;
+  return Totalsum;
 }
 
 /**
@@ -38,6 +41,8 @@ function betterSum(x, y) {
  */
 function remainder(number, divisor) {
   // write your code here & return value
+  const finalRemainder = number % divisor;
+  return finalRemainder;
 }
 module.exports = {
   sum,

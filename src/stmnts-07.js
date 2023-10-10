@@ -13,7 +13,9 @@
 
  */
 function logicalAnd(a, b) {
-  // write your code here & return
+  if (a && b === 1) {
+    return true;
+  } return false;
 }
 
 /**
@@ -24,6 +26,9 @@ function logicalAnd(a, b) {
  */
 function logicalOr(a, b) {
   // write your code here & return
+  if (a || b === 1) {
+    return true;
+  } return false;
 }
 
 /**
@@ -33,6 +38,8 @@ function logicalOr(a, b) {
  */
 function invertBoolean(bool) {
   // write your code here & return
+  const oppBool = !bool;
+  return oppBool;
 }
 
 /**
@@ -50,6 +57,15 @@ function invertBoolean(bool) {
  */
 function numberOfOdds(num) {
   // write your code here & return
+  for (num = 0; num <= 10; num++) {
+    if (num === 0) {
+      console.log(`${num} is even`);
+    } else if (num % 2 === 0) {
+      console.log(`${num} is even`);
+    } else {
+      console.log(`${num} is odd`);
+    }
+  }
 }
 
 /**
@@ -63,8 +79,13 @@ function numberOfOdds(num) {
  */
 function addUpTheNumbers(num) {
   // write your code here & return
+  const N = 10;
+  let totalnum = 0;
+  for (let a = 1; a <= N; a++) {
+    totalnum += a;
+  }
+  return totalnum;
 }
-
 /**
  * Calculates the letter grade for a given score
  * @param {number} score - the numeric grade score for a student
@@ -82,6 +103,20 @@ function addUpTheNumbers(num) {
  */
 function gradeGenerator(score) {
   // write your code here & return
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] <= 100) {
+      textG = 'A';
+    } else if (arr[i] < 90) {
+      textG = 'B';
+    } else if (arr[i] < 80) {
+      textG = 'C';
+    } else if (arr[i] < 70) {
+      textG = 'D';
+    } else {
+      textG = 'F';
+    }
+  }
+  return textG;
 }
 
 /**
@@ -102,6 +137,8 @@ function gradeGenerator(score) {
  */
 function getGrade(name, score) {
   // write your code here & return
+  const studentstring = `Jimmy Neutron got an ${score}`;
+  return studentstring;
 }
 
 module.exports = {
